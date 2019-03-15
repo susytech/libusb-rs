@@ -1,0 +1,19 @@
+[package]
+name = "libusb"
+version = "0.3.0"
+authors = ["David Cuddeback <david.cuddeback@gmail.com>"]
+description = "Rust library for accessing USB devices."
+license = "MIT"
+homepage = "https://github.com/dcuddeback/libusb-rs"
+repository = "https://github.com/dcuddeback/libusb-rs.git"
+documentation = "http://dcuddeback.github.io/libusb-rs/libusb/"
+readme = "README.md"
+keywords = ["usb", "libusb", "hardware", "bindings"]
+
+[dependencies]
+bit-set = {version="0.4.0",registry="susytech"}
+libusb-sys = { git = "https://github.com/susytech/libusb-sys" }
+libc = {version="0.2",registry="susytech"}
+
+[dev-dependencies]
+regex = {version="0.1.26",registry="susytech"}
